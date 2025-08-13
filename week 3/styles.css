@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: orange; /* Outer background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.form-box {
+  background-color: white; /* Inside form color */
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 300px;
+}
+
+.container {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+}
+
+.back-arrow {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+h1 {
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.form-box {
+  background-color: #ddd;
+  padding: 20px;
+  border-radius: 20px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input {
+  padding: 12px;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  background-color: #bbb;
+}
+
+.forgot {
+  text-align: center;
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: #333;
+}
+
+.signin-btn {
+  padding: 12px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.google-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #bbb;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.google-btn img {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%; /* Makes it round */
+}
+
+.google-btn .arrow {
+  font-size: 1.2rem;
+}
+.password-wrapper {
+  position: relative;
+}
+
+.password-wrapper input {
+  width: 100%;
+  padding-right: 40px; /* space for the icon */
+}
+
+.password-wrapper .eye {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 18px;
+}

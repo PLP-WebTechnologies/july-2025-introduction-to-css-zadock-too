@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign In</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="back-arrow">←</div>
+    <h1>Sign In</h1>
+
+    <div class="form-box">
+      <input type="text" placeholder="Username" />
+
+      <div class="password-wrapper">
+        <input type="password" id="password" placeholder="Password" />
+        <span id="togglePassword" class="eye">👁</span>
+      </div>
+
+      <a href="#" class="forgot">Forgot password?</a>
+      <button class="signin-btn">Sign In</button>
+
+      <button class="google-btn">
+        <img src="Google.png.jpg" alt="Google" />
+        Continue with Google
+        <span class="arrow">→</span>
+      </button>
+    </div>
+  </div>
+
+  <script>
+    const togglePassword = document.getElementById('togglePassword');
+    const passwordField = document.getElementById('password');
+
+    togglePassword.addEventListener('click', () => {
+      const type = passwordField.getAttribute('type') === 'password' ? 'text' : 'password';
+      passwordField.setAttribute('type', type);
+    });
+  </script>
+</body>
+</html>
